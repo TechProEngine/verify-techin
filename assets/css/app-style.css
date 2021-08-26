@@ -2071,9 +2071,6 @@ section {
   box-sizing: border-box;
   box-shadow: 0 2px 35px 0 rgba(86, 67, 144, 0.21);
 }
-#oscov-info-reverse-x .email, #oscov-info-reverse-x .phone, #oscov-info-reverse-x .whatsapp{
-}
-
   /*============== Oscov Message Inbox ================*/
   #oscov-chk-container{
     width: 50%;
@@ -2103,9 +2100,16 @@ section {
 /*--------------------------------------------------------------
 # Media Query Max Width 768px
 --------------------------------------------------------------*/
-@media only screen and (max-width: 800px){
-  /*========== Header Navbar Brand & Logo ==============*/
+@media only screen and (max-width: 768px){
+/***======== Mobile Navigation ===========*/
+ .mobile-nav-toggle{
+    display: block;
+    margin-right:20px;
+    border: none;
+    transition: 2s. ease-in-out;
+  }
 
+  /*========== Header Navbar Brand & Logo ==============*/
   #header{
     width: 100%;
   }
@@ -2132,11 +2136,11 @@ section {
 /*========== Hero Section ==============*/
 
  #hero{
-  height: 30rem;
+  height: 100%;
 }
 #hero .carousel-container {
-  height: 70vh;
-  padding-top: 50px;
+  /*height: 70vh;*/
+  padding-top: 200px;
 }
 
 #hero h2 {
@@ -2156,12 +2160,149 @@ section {
   margin: 0 auto 20px auto;
   color: #fff;
 }
-  #oscov-contact-row #oscov-chk-container #oscov-info-reverse-x{
-    width: 90%;
+/*=======Oscov Creative Engine=========*/
+
+.gist-title{
+  padding-bottom: 25px;
+}
+.gist-title p{
+  font-size: 20px;
+}
+.oscov-info-engine{
+  text-align: center;
+  width: 85%;
+  margin-left: 30px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20spx;
+  color: #fff;
+}
+/*============= Tab Pane 002 ==============*/
+/*======== Enabled Tab Pane 0002 Block ========*/
+div#oscov-revert-col{
+  display: none;
+}
+
+/*======== Enabled Light Block ========*/
+
+div#oscov-revert-light-innerbox{
+  display: block;
+  height: 40vh;
+  margin-bottom: 25px;
+  width: 70%;
+  margin-left: 100px;
+}
+
+#oscov-revert-light-innerbox .light-animate-image-eff{
+  height: 40vh;
+  width: 100%;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2x;
+}
+#oscov-revert-light-innerbox .oscov-light-img-pad{
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.4s ease-in-out;
+}
+#oscov-revert-light-innerbox .oscov-light-img-pad:hover{
+  transform: translateX(-10px);
+  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+#oscov-revert-light-innerbox #oscov-carousel-img-title{
+    margin-bottom: -30px;
+    line-height: 20px;
+}
+#oscov-revert-light-innerbox #oscov-carousel-img-title h5{
+  font-size: 15px;
+  font-family: Inconsolata;
+}
+.oscov-header-tab-pane{
+  font-size: 18px;
+ }
+  /*======== Enabled Mobile Portfolio Block ========*/
+
+#portfolio-flters{
+  margin-top: 10px;
+}
+#oscov-filter-data-xy #portfolio-flters #oscov-data-format{
+  font-size: 12px;
+  text-transform: capitalize;
+  color: palevioletred;
+  padding-left: 5px;
+  width: 100%;
+}
+
+/*============ Format ContentInn============*/
+.portfolio #portfolio-flters li {
+  /*cursor: pointer;*/
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  color: #444444;
+}
+
+.portfolio #portfolio-flters li::before {
+  content: "[";
+  margin-right: 3px;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li::after {
+  content: "]";
+  margin-left: 3px;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li:hover{
+  color: #ef6603;
+}
+
+#portfolio .container #oscov-portfolio-item{
+  width: 33%;
+  height: 20vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 10px;
+}
+#portfolio .container #oscov-portfolio-item .portfolio-info{
+  width: 100%;
+  }
+#portfolio .container #oscov-portfolio-item #oscov-portfolio-image{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#portfolio .container #oscov-portfolio-item #oscov-portfolio-image img{
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#portfolio .container #oscov-portfolio-item h4{
+  font-size: 11px;
+}
+
+#portfolio .container #oscov-portfolio-item p{
+  font-size: 12px;
+}
+
+#portfolio .container #oscov-portfolio-item .bx-plus, #portfolio .container #oscov-portfolio-item .bx-link{
+  font-size: 19px;
+}
+
+/*================== Oscov Contact Box ==================*/
+#oscov-info-reverse-x{
+  width: 100%;
+}
+  /*============== Oscov Message Inbox ================*/
+  #oscov-chk-container{
+    width: 50%;
   }
 
-
 }
+
 /*--------------------------------------------------------------
 # Media Query Max Width 490px
 --------------------------------------------------------------*/
@@ -2195,11 +2336,11 @@ section {
 /*========== Hero Section ==============*/
 
  #hero{
-  height: 30rem;
+  height: 100%;
 }
 #hero .carousel-container {
-  height: 70vh;
-  padding-top: 50px;
+  /*height: 70vh;*/
+  padding-top: 100px;
 }
 
 #hero h2 {
@@ -2219,23 +2360,189 @@ section {
   margin: 0 auto 20px auto;
   color: #fff;
 }
+#oscov-heading-tab-pane, .oscov-heading-tab-pane{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+/*=======Oscov Creative Engine=========*/
 
- /*============== Oscov Message Inbox ================*/
+.gist-title{
+  padding-bottom: 25px;
+}
+.gist-title p{
+  font-size: 20px;
+}
+.oscov-info-engine{
+  text-align: center;
+  width: 85%;
+  margin-left: 30px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20spx;
+  color: #fff;
+}
+/*============= Tab Pane 002 ==============*/
+/*======== Enabled Tab Pane 0002 Block ========*/
+div#oscov-revert-col{
+  display: none;
+}
+
+/*======== Enabled Light Block ========*/
+
+div#oscov-revert-light-innerbox{
+  display: block;
+  height: 45vh;
+  margin-bottom: 20px;
+}
+
+#oscov-revert-light-innerbox .light-animate-image-eff{
+  height: 45vh;
+  width: 100%;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2x;
+}
+#oscov-revert-light-innerbox .oscov-light-img-pad{
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.4s ease-in-out;
+}
+#oscov-revert-light-innerbox .oscov-light-img-pad:hover{
+  transform: translateX(-10px);
+  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+#oscov-revert-light-innerbox #oscov-carousel-img-title{
+    margin-bottom: -30px;
+    line-height: 20px;
+}
+#oscov-revert-light-innerbox #oscov-carousel-img-title h5{
+  font-size: 15px;
+  font-family: Inconsolata;
+}
+.oscov-header-tab-pane{
+  font-size: 18px;
+ }
+/*======== Enabled Mobile Portfolio Block ========*/
+
+#portfolio-flters{
+  margin-top: 10px;
+}
+#oscov-filter-data-xy #portfolio-flters #oscov-data-format{
+  font-size: 12px;
+  text-transform: capitalize;
+  color: palevioletred;
+  padding-left: 5px;
+  width: 100%;
+}
+
+/*============ Format ContentInn============*/
+.portfolio #portfolio-flters li {
+  /*cursor: pointer;*/
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  color: #444444;
+}
+
+.portfolio #portfolio-flters li::before {
+  content: "[";
+  margin-right: 3px;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li::after {
+  content: "]";
+  margin-left: 3px;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li:hover{
+  color: #ef6603;
+}
+
+#portfolio .container #oscov-portfolio-item{
+  width: 50%;
+  height: 20vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 7px;
+}
+#portfolio .container #oscov-portfolio-item .portfolio-info{
+  width: 100%;
+}
+#portfolio .container #oscov-portfolio-item #oscov-portfolio-image{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#portfolio .container #oscov-portfolio-item #oscov-portfolio-image img{
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#portfolio .container #oscov-portfolio-item h4{
+  font-size: 11px;
+}
+
+#portfolio .container #oscov-portfolio-item p{
+  font-size: 12px;
+}
+
+#portfolio .container #oscov-portfolio-item .bx-plus{
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+ #portfolio .container #oscov-portfolio-item .bx-link{
+  font-size: 19px;
+  margin-right: 20px;
+}
+/*=================== Testimonials Section =======================*/
+#oscov-container-reverse-x .testimonial-item p{
+  color: #fff; 
+}
+#oscov-container-reverse-x .testimonial-item h3{
+  color: #fff; font-family: Inconsolata;
+}
+#oscov-container-reverse-x .testimonial-item h4{
+  color: #fff; font-family: Inconsolata;
+}
+#oscov-container-reverse-x .testimonial-img{
+  height: 110px;
+  width: 110px;
+}
+
+#oscov-container-reverse-x .testimonial-item p{
+  font-size: 14px;
+
+}
+#oscov-container-reverse-x .testimonial-item .quote-icon-left, #oscov-container-reverse-x .testimonial-item .quote-icon-right{
+  font-size: 15px;
+  color: #ef6603;
+  padding: 1px;
+}
+
+/*================== Oscov Contact Box ==================*/
+#oscov-info-reverse-x{
+  width: 100%;
+  border-radius: 2%;
+  min-height: 20vh;
+  border-bottom-right-radius:none;
+  /*border-right-color: #ef6603;*/
+  box-sizing: border-box;
+  box-shadow: 0 2px 35px 0 rgba(86, 67, 144, 0.21);
+}
+  /*============== Oscov Message Inbox ================*/
   #oscov-chk-container{
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
-  #oscov-contact-row #oscov-chk-container #oscov-info-reverse-x{
-    width: 100%;
-  }
   #oscov-message-inbox-reverse-y{
     border-bottom-right-radius:none;
-    /*min-height: 0vh;*/
     box-sizing: border-box;
- }
- #oscov-message-inbox-reverse-y #oscov-submit-button-reverse-xy button{
-  margin-bottom: 2rem;
  }
 
 /*=============== Hide All Content ===========*/
@@ -2256,7 +2563,7 @@ div.holdcollapseblock{
 }
 
 /*--------------------------------------------------------------
-# Media Query Max Width 320px
+# Media Query Max Width 360px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 360px){
 
@@ -2301,7 +2608,6 @@ body{
  #hero{
   height: 100%;
 }
-/* hero carousel container altered=============================*/
 #hero .carousel-container {
   padding-top: 200px;
 }
@@ -2512,9 +2818,7 @@ div#oscov-revert-light-innerbox{
 .oscov-header-tab-pane{
   font-size: 18px;
  }
-/*.oscov-par-content, .oscov-par-listed-item li i, .oscov-par-listed-item li{
-  font-size: 15px;
-}*/
+
 /*============= Tab Pane 005 ==============*/
 /*======== Disabled Tab Pane 0005 Block ========*/
 div.oscov_services_rentals{
@@ -2678,9 +2982,6 @@ div#oscov-filter-data-xy{
 #portfolio .container #oscov-portfolio-item .bx-plus, #portfolio .container #oscov-portfolio-item .bx-link{
   font-size: 16px;
 }
-
-
-
 /*=================== Testimonials Section =======================*/
 #oscov-container-reverse-x .testimonial-item p{
   color: #fff; 
@@ -2716,9 +3017,6 @@ div#oscov-filter-data-xy{
   box-sizing: border-box;
   box-shadow: 0 2px 35px 0 rgba(86, 67, 144, 0.21);
 }
-#oscov-info-reverse-x .email, #oscov-info-reverse-x .phone, #oscov-info-reverse-x .whatsapp{
-}
-
   /*============== Oscov Message Inbox ================*/
   #oscov-chk-container{
     width: 100%;
@@ -2729,9 +3027,7 @@ div#oscov-filter-data-xy{
     border-bottom-right-radius:none;
     box-sizing: border-box;
  }
- #oscov-message-inbox-reverse-y #oscov-submit-button-reverse-xy button{
-  margin-bottom: 2rem;
- }
+
 /*=========== Footer Aligning Section ================*/
 /*=============== Hide All Content ===========*/
 #footer .container #oscov-footer-innerbox .oscov-cms-revert{
