@@ -2258,11 +2258,11 @@ div.holdcollapseblock{
 /*--------------------------------------------------------------
 # Media Query Max Width 320px
 --------------------------------------------------------------*/
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 360px){
 
   /***======== Mobile Navigation ===========*/
  .mobile-nav-toggle{
-    margin-right:20px;
+    margin-right:15px;
     /*border: 2px solid red;*/
     transition: 2s. ease-in-out;
   }
@@ -2289,7 +2289,7 @@ body{
   }
    #header .logo-design{
     width:40px;
-    margin-left: 13px;
+    margin-left: 10px;
     border-radius: 100%;
     height: 40px;
     -webkit-animation-iteration-count: 3;
@@ -2299,13 +2299,12 @@ body{
 /*========== Hero Section ==============*/
 
  #hero{
-  height: 30rem;
+  height: 100%;
 }
+/* hero carousel container altered=============================*/
 #hero .carousel-container {
-  height: 70vh;
-  padding-top: 50px;
+  padding-top: 200px;
 }
-
 #hero h2 {
   margin-bottom: 10px;
   padding-top: -30px;
@@ -2508,8 +2507,14 @@ div#oscov-revert-light-innerbox{
 }
 #oscov-revert-light-innerbox #oscov-carousel-img-title h5{
   font-size: 15px;
+  font-family: Inconsolata;
 }
-
+.oscov-header-tab-pane{
+  font-size: 18px;
+ }
+/*.oscov-par-content, .oscov-par-listed-item li i, .oscov-par-listed-item li{
+  font-size: 15px;
+}*/
 /*============= Tab Pane 005 ==============*/
 /*======== Disabled Tab Pane 0005 Block ========*/
 div.oscov_services_rentals{
@@ -2637,32 +2642,37 @@ div#oscov-filter-data-xy{
   margin-left: 3px;
   color: #fff;
 }
+
+.portfolio #portfolio-flters li:hover{
+  color: #ef6603;
+}
+
 #portfolio .container #oscov-portfolio-item{
   width: 50%;
-  height: 30vh;
+  height: 20vh;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 10px;
-  padding-right: 0;
-  margin-bottom: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 10px;
 }
 #portfolio .container #oscov-portfolio-item #oscov-portfolio-image{
   padding: 0;
-  height: 29.50vh;
+  height: 100%;
   width: 100%;
 }
 #portfolio .container #oscov-portfolio-item #oscov-portfolio-image img{
   border-radius: 2%;
   width: 100%;
-  height: 29.50vh;
+  height: 100%;
   padding: 0;
 }
 #portfolio .container #oscov-portfolio-item h4{
-  font-size: 10px;
+  font-size: 11px;
 }
 
 #portfolio .container #oscov-portfolio-item p{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #portfolio .container #oscov-portfolio-item .bx-plus, #portfolio .container #oscov-portfolio-item .bx-link{
