@@ -385,15 +385,10 @@
 #oscov_container .section-title{
   margin-top: -2rem;
 }
-#oscov-contact-info{
-  /*width: 43%;*/
-}
+
 #oscov-info-reverse-x{
-  /*width: 100%;*/
   border-radius: 1%;
-  min-height: 50vh;
   border-bottom-right-radius: 15%;
-  /*border-right-color: #ef6603;*/
   box-sizing: border-box;
   box-shadow: 0 2px 35px 0 rgba(86, 67, 144, 0.21);
 }
@@ -424,15 +419,9 @@
 # Oscov Contact Message Block Section 
 ------------------------------------------------------------*/
 #oscov-message-inbox-reverse-y{
-  /*width: 57%;*/
   border-radius: 1%;
   border-bottom-right-radius: 15%;
-  /*min-height: 100vh;*/
 }
-#oscov-form-panel{
-  min-height: 75vh;
-}
-
 
 /*--------------------------------------------------------------
 # Oscov Footer Block Section 
