@@ -2022,8 +2022,7 @@ section {
   height: 30rem;
 }
 #hero .carousel-container {
-  height: 70vh;
-  padding-top: 50px;
+  padding-top: 200px;
 }
 
 #hero h2 {
@@ -2057,10 +2056,126 @@ section {
   font-family: Inconsolata;
   font-weight: 400;
   padding: 10px 20px;
+  }
+/*============= Tab Pane 002 ==============*/
+/*======== Enabled Tab Pane 0002 Block ========*/
+div#oscov-revert-col{
+  display: none;
+}
+/*======== Enabled Light Block ========*/
+
+div#oscov-revert-light-innerbox{
+  display: block;
+  height: 45vh;
+  margin-bottom: 25px;
+  width: 100%;
+  margin-left: 0;
 }
 
-/*=========Oscov Creative Inn Section =============*/
+#oscov-revert-light-innerbox .light-animate-image-eff{
+  height: 45vh;
+  width: 100%;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2x;
+}
+#oscov-revert-light-innerbox .oscov-light-img-pad{
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.4s ease-in-out;
+}
+#oscov-revert-light-innerbox .oscov-light-img-pad:hover{
+  transform: translateX(-10px);
+  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+#oscov-revert-light-innerbox #oscov-carousel-img-title{
+    margin-bottom: -30px;
+    line-height: 20px;
+}
+#oscov-revert-light-innerbox #oscov-carousel-img-title h5{
+  font-size: 15px;
+  font-family: Inconsolata;
+}
+.oscov-header-tab-pane{
+  font-size: 18px;
+ }
+/*======== Enabled Mobile Portfolio Block ========*/
 
+#portfolio-flters{
+  margin-top: 10px;
+}
+#oscov-filter-data-xy #portfolio-flters #oscov-data-format{
+  font-size: 12px;
+  text-transform: capitalize;
+  color: palevioletred;
+  padding-left: 5px;
+  width: 100%;
+}
+
+/*============ Format ContentInn============*/
+.portfolio #portfolio-flters li {
+  /*cursor: pointer;*/
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  color: #444444;
+}
+
+.portfolio #portfolio-flters li::before {
+  content: "[";
+  margin-right: 3px;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li::after {
+  content: "]";
+  margin-left: 3px;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li:hover{
+  color: #ef6603;
+}
+
+#portfolio .container #oscov-portfolio-item{
+  width: 33%;
+  height: 20vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 7px;
+}
+#portfolio .container #oscov-portfolio-item .portfolio-info{
+  width: 100%;
+}
+#portfolio .container #oscov-portfolio-item #oscov-portfolio-image{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#portfolio .container #oscov-portfolio-item #oscov-portfolio-image img{
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#portfolio .container #oscov-portfolio-item h4{
+  font-size: 11px;
+}
+
+#portfolio .container #oscov-portfolio-item p{
+  font-size: 12px;
+}
+
+#portfolio .container #oscov-portfolio-item .bx-plus{
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+ #portfolio .container #oscov-portfolio-item .bx-link{
+  font-size: 19px;
+  margin-right: 20px;
+}
 /*================== Oscov Contact Box ==================*/
 #oscov-info-reverse-x{
   width: 80%;
@@ -2393,6 +2508,8 @@ div#oscov-revert-light-innerbox{
   display: block;
   height: 45vh;
   margin-bottom: 20px;
+  width:100%;
+  margin-left:0;
 }
 
 #oscov-revert-light-innerbox .light-animate-image-eff{
@@ -2788,7 +2905,8 @@ div#oscov-revert-col{
 div#oscov-revert-light-innerbox{
   display: block;
   height: 45vh;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  width:100%;
+  margin-left:0;
 }
 
 #oscov-revert-light-innerbox .light-animate-image-eff{
