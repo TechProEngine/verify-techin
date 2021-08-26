@@ -4,10 +4,6 @@
 /*--------------------------------------------------------------
 # Oscov Creative Engine Section 
 --------------------------------------------------------------*/
-#box-decon-inner-x .oscov_box_decon_Inn #oscov_inner_box_decon{
-  border-bottom: 2px solid gray;
-    
-}
 #box-decon-inner-x .oscov_box_decon_Inn .icon-box-decon{
   padding: 30px;
   position: relative;
@@ -17,7 +13,6 @@
   box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.4s ease-in-out;
   width: 100%;
-  border-bottom: 2px solid gray;
   height: 100%;
 }
 
